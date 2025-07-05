@@ -1,0 +1,21 @@
+text,sentiment
+"This product is absolutely amazing! It exceeded all my expectations.",Positive
+"Terrible experience. The item broke after just two days of use.",Negative
+"The product is okay, nothing special but it gets the job done.",Neutral
+"I love this so much! Best purchase I've made this year.",Positive
+"Poor quality materials and doesn't work as advertised.",Negative
+"Arrived on time and was exactly as described in the listing.",Positive
+"Not sure how I feel about this. It has some pros and cons.",Neutral
+"Waste of money. I regret buying this product.",Negative
+"Excellent value for the price. Highly recommend!",Positive
+"It's fine, but I expected better quality for the price.",Neutral
+"The customer service was horrible when I had an issue.",Negative
+"This has completely changed how I do my daily routine. Fantastic!",Positive
+"Meets basic requirements but lacks advanced features.",Neutral
+"Stopped working after a week. Very disappointed.",Negative
+"Perfect in every way! Couldn't be happier with my purchase.",Positive
+"The instructions were unclear and setup was difficult.",Negative
+"Good product overall, though a bit pricey.",Neutral
+"Worth every penny! The quality is outstanding.",Positive
+"Not as durable as I hoped. Showing wear after short use.",Negative
+"Does what it's supposed to do without any fuss.",Neutral
