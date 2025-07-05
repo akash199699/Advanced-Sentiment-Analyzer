@@ -12,6 +12,7 @@ An interactive, web-based Sentiment Analysis system that combines both **traditi
 ✅ File batch processing for sentiment analysis  
 ✅ Confidence scores and probability distributions  
 ✅ Modular, extensible Python code  
+✅ Google Colab notebook for easy testing  
 
 ---
 
@@ -22,16 +23,22 @@ An interactive, web-based Sentiment Analysis system that combines both **traditi
 - NLTK (Text Preprocessing)  
 - Hugging Face Transformers (for advanced model)  
 - Gradio (Interactive web interface)  
+- Matplotlib, Seaborn (Optional visualizations)  
 
 ---
 
 ## ⚙️ How to Run
 
-### 1. Install Requirements
+### 1. Clone the Repository
 
 ```bash
-pip install -r requirements.txt
+git clone https://github.com/akash199699/Advanced-Sentiment-Analyzer.git
+cd Advanced-Sentiment-Analyzer
 ````
+
+---
+
+### 2. Install Requirements
 
 For Transformer support:
 
@@ -41,13 +48,37 @@ pip install transformers torch
 
 ---
 
-### 2. Launch the Gradio Interface
+### 3. Launch the Gradio Interface (Locally)
 
 ```bash
 python sentiment_analyzer.py
 ```
 
-The Gradio web app will open automatically. You can also share the app via a public link.
+OR run the Jupyter Notebook:
+
+```bash
+jupyter notebook sentiment_analyzer.ipynb
+```
+
+---
+
+### 4. Run on Google Colab (No Setup Required)
+
+Click below to open the notebook on Google Colab:
+
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)]([YOUR_COLAB_LINK_HERE](https://colab.research.google.com/drive/1HGtOZmL40Sj6qhxrhOKvIca1y2n-ZcA-?usp=sharing))
+
+---
+
+## 📂 Repository Structure
+
+```
+Advanced-Sentiment-Analyzer/
+├── Review Data File for Uploading.txt   # Sample text file for file analysis
+├── Custom Training Data.csv             # Sample CSV for custom model training
+├── sentiment_analyzer.ipynb             # Jupyter Notebook version for experimentation
+└── sentiment_analyzer.py                # Complete system with Gradio interface (Python script)
+```
 
 ---
 
@@ -55,8 +86,8 @@ The Gradio web app will open automatically. You can also share the app via a pub
 
 ### ✅ Model Training
 
-* Choose Sample Data or upload your custom dataset (CSV)
-* Train using:
+* Train with Sample Data or upload your own CSV
+* Choose between:
 
   * Traditional ML (TF-IDF + SVM)
   * Transformer-based (RoBERTa, no training required)
@@ -65,29 +96,18 @@ The Gradio web app will open automatically. You can also share the app via a pub
 ### ✅ Text Analysis
 
 * Enter text to analyze sentiment
-* Displays prediction, confidence score, and probability breakdown
+* View prediction, confidence score, and probability breakdown
 
 ### ✅ File Analysis
 
 * Upload a `.txt` file (one sentence/review per line)
-* Provides sentiment breakdown for the entire file
-
----
-
-## 📁 Project Structure
-
-```
-Advanced-Sentiment-Analyzer/
-├── sentiment_analyzer.py      # Main Python script for sentiment analysis
-└── sentiment_analyzer.ipynb   # Jupyter Notebook version
-```
-
+* Provides sentiment breakdown and confidence scores
 
 ---
 
 ## 👨‍💻 Author
 
-Developed by **B Akash Krishna**
+Developed by **Akash Krishna**
 As part of an AI Internship by Novolo AI.
 
 ---
@@ -106,4 +126,3 @@ As part of an AI Internship by Novolo AI.
 This project is for educational and demonstration purposes. Feel free to use or extend it for personal projects.
 
 ```
-
