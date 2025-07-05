@@ -1,56 +1,76 @@
-# 💬 Advanced Sentiment Analyzer
+# 🎭 Advanced Sentiment Analyzer
 
-An advanced sentiment analysis tool built using Python, providing accurate sentiment classification for text data. This project demonstrates the use of Natural Language Processing (NLP) techniques combined with machine learning to classify text as **positive**, **negative**, or **neutral**.
+An interactive, web-based Sentiment Analysis system that combines both **traditional machine learning** (TF-IDF + SVM) and **Transformer-based** approaches to classify text as Positive, Negative, or Neutral. Designed for flexibility, explainability, and ease of use.
 
 ---
 
 ## 🎯 Project Highlights
 
-✅ Classifies text into Positive, Negative, or Neutral  
-✅ Uses machine learning models for sentiment prediction  
-✅ Preprocessing pipeline for cleaning and tokenizing text  
-✅ Easy-to-use command-line, notebook, or **Google Colab** interface  
+✅ Supports Traditional ML (TF-IDF + SVM, Random Forest, Logistic Regression)  
+✅ Optional Transformer-based Sentiment Analysis (RoBERTa via Hugging Face)  
+✅ Clean, Gradio-powered web interface  
+✅ File batch processing for sentiment analysis  
+✅ Confidence scores and probability distributions  
+✅ Modular, extensible Python code  
 
 ---
 
 ## 🧩 Technologies Used
 
 - Python 3.x  
-- Scikit-learn  
-- Natural Language Toolkit (NLTK)  
-- Pandas, NumPy   
+- Scikit-learn (TF-IDF, ML models)  
+- NLTK (Text Preprocessing)  
+- Hugging Face Transformers (for advanced model)  
+- Gradio (Interactive web interface)  
 
 ---
 
 ## ⚙️ How to Run
 
-### 🖥️ Local Setup
+### 1. Install Requirements
 
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/yourusername/Advanced-Sentiment-Analyzer.git
-   cd Advanced-Sentiment-Analyzer
-  ````
+```bash
+pip install -r requirements.txt
+````
 
-2. **Install Requirements**
+For Transformer support:
 
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Run the Analyzer**
-
-   * Open and run the Jupyter Notebook provided
-     **OR**
-   * Run the Python script for command-line sentiment prediction
+```bash
+pip install transformers torch
+```
 
 ---
 
-### ☁️ Run on Google Colab (No Setup Required)
+### 2. Launch the Gradio Interface
 
-Click below to run the notebook on Google Colab:
+```bash
+python sentiment_analyzer.py
+```
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)]([YOUR_COLAB_LINK_HERE](https://colab.research.google.com/drive/1HGtOZmL40Sj6qhxrhOKvIca1y2n-ZcA-?usp=sharing))
+The Gradio web app will open automatically. You can also share the app via a public link.
+
+---
+
+## 🕹️ Features in the Web App
+
+### ✅ Model Training
+
+* Choose Sample Data or upload your custom dataset (CSV)
+* Train using:
+
+  * Traditional ML (TF-IDF + SVM)
+  * Transformer-based (RoBERTa, no training required)
+* View performance metrics (Accuracy, Precision, Recall, F1-Score)
+
+### ✅ Text Analysis
+
+* Enter text to analyze sentiment
+* Displays prediction, confidence score, and probability breakdown
+
+### ✅ File Analysis
+
+* Upload a `.txt` file (one sentence/review per line)
+* Provides sentiment breakdown for the entire file
 
 ---
 
@@ -58,40 +78,32 @@ Click below to run the notebook on Google Colab:
 
 ```
 Advanced-Sentiment-Analyzer/
-├── sentiment_analyzer.py     # Main Python script for sentiment analysis
-└──sentiment_analyzer.ipynb   # Jupyter Notebook version
+├── sentiment_analyzer.py      # Main Python script for sentiment analysis
+└── sentiment_analyzer.ipynb   # Jupyter Notebook version
 ```
 
----
-
-## 🔬 Features
-
-* Text preprocessing (cleaning, tokenization)
-* Vectorization using Bag-of-Words or TF-IDF
-* Sentiment classification using ML models (e.g., Naive Bayes, SVM)
-* Model accuracy evaluation
-* Can be extended to analyze social media, reviews, etc.
 
 ---
 
 ## 👨‍💻 Author
 
 Developed by **B Akash Krishna**
-As part of an Internship by Novolo AI through AccelerateX
+As part of an AI Internship by Novolo AI.
 
 ---
 
 ## 💡 Future Enhancements
 
-* Deep learning integration for improved accuracy
-* Web-based or GUI interface
-* Real-time sentiment analysis for live data streams
-* Multilingual sentiment support
+* Deep Learning model fine-tuning
+* Real-time API for external integration
+* Advanced visualizations (confusion matrix, class distributions)
+* Enhanced error handling and data validation
 
 ---
 
 ## 📝 License
 
-This project is for educational purposes. Feel free to use, modify, or extend it for personal learning or demonstration.
+This project is for educational and demonstration purposes. Feel free to use or extend it for personal projects.
 
 ```
+
