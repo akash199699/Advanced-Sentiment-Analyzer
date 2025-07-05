@@ -66,7 +66,7 @@ jupyter notebook sentiment_analyzer.ipynb
 
 Click below to open the notebook on Google Colab:
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)]([YOUR_COLAB_LINK_HERE](https://colab.research.google.com/drive/1HGtOZmL40Sj6qhxrhOKvIca1y2n-ZcA-?usp=sharing))
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)]((https://colab.research.google.com/drive/1HGtOZmL40Sj6qhxrhOKvIca1y2n-ZcA-?usp=sharing)](https://colab.research.google.com/drive/1r_MLV4IWSA6vyjM-5e_sB5mslGpWoueM?usp=sharing))
 
 ---
 
